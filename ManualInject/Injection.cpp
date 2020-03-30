@@ -31,7 +31,7 @@ bool ManualMap(HANDLE hProc, const char* szDllFile)
 	file.read(reinterpret_cast<char*>(pSrcData), fileSize);
 	file.close();
 
-	if (reinterpret_cast<IMAGE_DOS_HEADER*>(pSrcData)->e_magic != 0x5A4D) // 0x5A4D == MZ
+	if (reinterpret_cast<IMAGE_DOS_HEADER*>(pSrcData)->e_magic != 0x5A4D) // 0x5A4D == MZ (little endian)
 	{
 		delete[] pSrcData;
 		return false;

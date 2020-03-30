@@ -1,5 +1,7 @@
 // ManualInject.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
+// Great post explaining how this works: https://www.elitepvpers.com/forum/c-c/4175990-how-does-manual-mapping-work-example.html
+//
 
 #include <iostream>
 #include "Injection.h"
