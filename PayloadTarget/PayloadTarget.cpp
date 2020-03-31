@@ -5,5 +5,6 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	printf("[+] I exist only to be abused...");
+	getchar();
 }
