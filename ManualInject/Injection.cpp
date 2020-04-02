@@ -4,11 +4,11 @@ void __stdcall Shellcode(MANUAL_MAPPING_DATA * pData);
 
 bool ManualMap(HANDLE hProc, const char* szDllFile)
 {
-	BYTE *					pSrcData		= nullptr;
-	IMAGE_NT_HEADERS *		pOldNtHeader	= nullptr;
+	BYTE *			pSrcData	= nullptr;
+	IMAGE_NT_HEADERS *	pOldNtHeader	= nullptr;
 	IMAGE_OPTIONAL_HEADER * pOldOptHeader	= nullptr;
-	IMAGE_FILE_HEADER *		pOldFileHeader	= nullptr;
-	BYTE *					pTargetBase		= nullptr;
+	IMAGE_FILE_HEADER *	pOldFileHeader	= nullptr;
+	BYTE *			pTargetBase	= nullptr;
 
 	/*
 	  1. Read target process file contents into this address space  
